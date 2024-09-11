@@ -2,7 +2,7 @@
 function reverseString(input) {
   return input.split("").reverse().join("");
 }
-function reverseString_loopbased(input) {
+function reverseString_ifs(input) { // ifs (Implementation-from-scratch)
   let result = ""; // make a variable to store the reversed string
   for (let i = input.length - 1; i >= 0; i--) {
     /* make a loop to iterate over the input string backwards
@@ -20,5 +20,5 @@ console.log(reverseString("JavaScript")); // Outputs: "tpircsVAJ"
 console.log(
   "=====================================\nImplementation from scratch:"
 );
-console.log(reverseString_loopbased("Hello World")); // Outputs: "dlroW olleH"
-console.log(reverseString_loopbased("JavaScript")); // Outputs: "tpircsVAJ"
+console.log(reverseString_ifs("Hello World")); // Outputs: "dlroW olleH"
+console.log(reverseString_ifs("JavaScript")); // Outputs: "tpircsVAJ"
